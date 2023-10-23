@@ -1,0 +1,21 @@
+HIERARCHY_FILE=/path/to/challenge-2019-label300-hierarchy.json
+BOUNDING_BOXES=/path/to/challenge-2019-validation-detection-bbox
+IMAGE_LABELS=/path/to/challenge-2019-validation-detection-human-imagelabels
+
+python object_detection/dataset_tools/oid_hierarchical_labels_expansion.py \
+    --json_hierarchy_file=${HIERARCHY_FILE} \
+    --input_annotations=${BOUNDING_BOXES}.csv \
+    --output_annotations=${BOUNDING_BOXES}_expanded.csv \
+    --annotation_type=1
+
+python object_detection/dataset_tools/oid_hierarchical_labels_expansion.py \
+    --json_hierarchy_file=${HIERARCHY_FILE} \
+    --input_annotations=${IMAGE_LABELS}.csv \
+    --output_annotations=${IMAGE_LABELS}_expanded.csv \
+    --annotation_type=2
+
+python object_detection/dataset_tools/oid_hierarchical_labels_expansion.py \
+    --json_hierarchy_file=${HIERARCHY_FILE} \
+    --input_annotations=${INSTANCE_SEGMENTATIONS}.csv \
+    --output_annotations=${INSTANCE_SEGMENTATIONS}_expanded.csv \
+    --annotation_type=1

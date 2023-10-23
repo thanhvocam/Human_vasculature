@@ -1,0 +1,6 @@
+tqdm
+numpy
+ultralytics==8.0.200
+pycocotools
+torch
+streamlit
