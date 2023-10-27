@@ -6,6 +6,7 @@ import gdown
 
 url = "https://drive.google.com/uc?id=1xZL5HjrVFsp4Zu6osnc_btM1NfiBcoop"
 output = "best1.pt"
+gdown.download(url, output, quiet=False)
 
 def main():
     st.title("Human Vasculature Image Segmentation")  
