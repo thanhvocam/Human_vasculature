@@ -1,6 +1,7 @@
-tqdm
+# tqdm
 numpy
 ultralytics==8.0.200
-pycocotools
+# pycocotools
 torch
 streamlit
+opencv-python==4.8.1.78
