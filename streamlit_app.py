@@ -2,7 +2,10 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import cv2
+import gdown
 
+url = "https://drive.google.com/uc?id=1xZL5HjrVFsp4Zu6osnc_btM1NfiBcoop"
+output = "best.pt"
 
 def main():
     st.title("Human Vasculature Image Segmentation")  
