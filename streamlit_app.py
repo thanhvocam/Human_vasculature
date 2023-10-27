@@ -5,7 +5,7 @@ import cv2
 import gdown
 
 url = "https://drive.google.com/uc?id=1xZL5HjrVFsp4Zu6osnc_btM1NfiBcoop"
-output = "best.pt"
+output = "best1.pt"
 
 def main():
     st.title("Human Vasculature Image Segmentation")  
@@ -17,7 +17,7 @@ def main():
 
                         
         # Load YOLO model
-        model = YOLO("best.pt")            
+        model = YOLO(output)            
         # Perform object detection
         history = model.predict(image)[0]
         image_after_pred = history.plot()
