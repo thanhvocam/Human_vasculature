@@ -12,7 +12,7 @@ This project aims to build an automated system for segmenting blood vessels in s
 
 ## Demo
 For a quick demo, please visit this website: https://humanvasculature-fehopwpmus7frpakvv2ngt.streamlit.app/
-You can upload an image in `.tif` format in the val dataset and see the result. Read the instructions for downloading data below.
+You can upload an image in `.tif` format in the `val` directory and see the result.
 
 ## Data prepartion
 1. File polygons.jsonl: https://drive.google.com/file/d/145_7xXJ9_DzLrIGfO5AIXbyJoIYi7H9Z/view?usp=drive_link
