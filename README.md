@@ -11,12 +11,12 @@ This project aims to build an automated system for segmenting blood vessels in s
 ![After predict](after_pred.png)
 
 ## Demo
-For a quick demo, please visit this website: `https://humanvasculature-fehopwpmus7frpakvv2ngt.streamlit.app/`.
+For a quick demo, please visit this website: https://humanvasculature-fehopwpmus7frpakvv2ngt.streamlit.app/
 You can upload an image in `.tif` format in the val dataset and see the result. Read the instructions for downloading data below.
 
 ## Data prepartion
-1. File polygons.jsonl: `https://drive.google.com/file/d/145_7xXJ9_DzLrIGfO5AIXbyJoIYi7H9Z/view?usp=drive_link`.
-2. Data to training model: `https://drive.google.com/file/d/1Ct4n8tp-G_X65xxt1x7fa1yUNj373s-p/view?usp=drive_link`.
+1. File polygons.jsonl: https://drive.google.com/file/d/145_7xXJ9_DzLrIGfO5AIXbyJoIYi7H9Z/view?usp=drive_link
+2. Data to training model: https://drive.google.com/file/d/1Ct4n8tp-G_X65xxt1x7fa1yUNj373s-p/view?usp=drive_link
 
 ## Installation
 1. Install the Python environment using the `env.yaml` file. Run the following command to install: `conda env create -f env.yaml`
@@ -34,13 +34,13 @@ Steps:
 # Inference
 Steps:
 1. Clone this repo
-2. Download weights of the trained model: `https://drive.google.com/file/d/1xZL5HjrVFsp4Zu6osnc_btM1NfiBcoop/view?usp=drive_link`.
+2. Download weights of the trained model: https://drive.google.com/file/d/1xZL5HjrVFsp4Zu6osnc_btM1NfiBcoop/view?usp=drive_link
 3. Set up the env as specified in installation.
 4. Run `infer.py` file.
 
 # Deploy the model with streamlit
 1. To run the streamlit app locally: `streamlit run streamlit_app.py`.
-2. To deploy the app on streamlit community cloud, follow the instructions: `https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app`.
+2. To deploy the app on streamlit community cloud, follow the instructions: https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app
 
 # Build Docker container
 Steps: 
