@@ -36,14 +36,13 @@ Steps:
 4. Run `infer.py` file.
 
 # Deploy the model with streamlit
-1. Prepare main file to run streamlit (example: `streamlit_app.py`).
-2. Follow the instructions: `https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app`.
+1. To run the streamlit app locally: `streamlit run streamlit_app.py`.
+2. To deploy the app on streamlit community cloud, follow the instructions: `https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app`.
 
 # Build Docker container
 Steps: 
-1. Build a Docker file.
-2. Run `docker build -t {image's name}` to build Docker image.
-3. Run `docker run -p {port} {image's name}` to build Docker container.
+1. Run `docker build -t {image's name} .` to build Docker image.
+2. Run `docker run -p {port} {image's name}` to build Docker container.
 
 
 ## Directory Structure
