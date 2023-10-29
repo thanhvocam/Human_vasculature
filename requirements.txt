@@ -1,7 +1,7 @@
-# tqdm
+tqdm
 numpy
 ultralytics
-# pycocotools
+pycocotools
 torch
 streamlit
 opencv-python-headless
