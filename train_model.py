@@ -8,11 +8,8 @@ import random
 from ultralytics import YOLO
 from PIL import Image
 import torch
-import zlib
-import base64
 from pycocotools import _mask as coco_mask
 import matplotlib.pyplot as plt
-import pandas as pd
 import cv2
 
 

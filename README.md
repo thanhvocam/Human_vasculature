@@ -4,7 +4,7 @@
 This project aims to build an automated system for segmenting blood vessels in scanned images. Blood vessel segmentation is the process of classifying and marking blood vessel regions in an image, separating them from other structures.
 
 ## Example with a image after predict with model.
-![Before predict](72e40acccadf.tif)
+![Before predict](before_pred.png)
 ![After predict](after_pred.png)
 
 ## Optional
