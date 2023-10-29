@@ -7,10 +7,13 @@ This project aims to build an automated system for segmenting blood vessels in s
 ![Before predict](before_pred.png)
 ![After predict](after_pred.png)
 
-## Optional
-1. If you want to use Docker for deployment, install Docker using the Dockerfile: `docker build -t blood-vessel-segmentation .`
-2. If you want to use Streamlit app access: `https://humanvasculature-fehopwpmus7frpakvv2ngt.streamlit.app/`
-3. If you want to try to see the prediction results immediately, you can run the `infer.py`
+## Demo
+For a quick demo, please visit this website: `https://humanvasculature-fehopwpmus7frpakvv2ngt.streamlit.app/`.
+You can upload an image in `.tif` format in the val dataset and see the result. Read the instructions for downloading data below.
+
+## Data prepartion
+1. File polygons.jsonl: `https://drive.google.com/file/d/145_7xXJ9_DzLrIGfO5AIXbyJoIYi7H9Z/view?usp=drive_link`.
+2. Data to training model: `https://drive.google.com/file/d/1Ct4n8tp-G_X65xxt1x7fa1yUNj373s-p/view?usp=drive_link`.
 
 ## Installation
 1. Install the Python environment using the `env.yaml` file. Run the following command to install: `conda env create -f env.yaml`
@@ -18,9 +21,30 @@ This project aims to build an automated system for segmenting blood vessels in s
 3. Install the required packages: `pip install -r requirements.txt`
 
 ## Usage
-- Train the model: Run the `train_model.py` file to train the segmentation model on the training data.
-- Predict and segment blood vessels on new images: Run the `infer.py` file to predict and segment blood vessels on new images. The path to the image to be predicted is specified in the `infer.py` file.
-- Run the Streamlit application: Run the `streamlit_app.py` file to start the Streamlit application to display and interact with the blood vessel segmentation results on a web interface.
+# Training
+Steps:
+1. Clone this repo.
+2. Download data and extract to root folder of the project.
+3. Set up the env as specified in installation.
+4. Run `train_model.py` file.
+
+# Inference
+Steps:
+1. Clone this repo
+2. Download weights of the trained model: `https://drive.google.com/file/d/1xZL5HjrVFsp4Zu6osnc_btM1NfiBcoop/view?usp=drive_link`.
+3. Set up the env as specified in installation.
+4. Run `infer.py` file.
+
+# Deploy the model with streamlit
+1. Prepare main file to run streamlit (example: `streamlit_app.py`).
+2. Follow the instructions: `https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app`.
+
+# Build Docker container
+Steps: 
+1. Build a Docker file.
+2. Run `docker build -t {image's name}` to build Docker image.
+3. Run `docker run -p {port} {image's name}` to build Docker container.
+
 
 ## Directory Structure
 - `best.pt`: The weights of the best-trained model.
