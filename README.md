@@ -4,10 +4,10 @@
 This project aims to build an automated system for segmenting blood vessels in scanned images. Blood vessel segmentation is the process of classifying and marking blood vessel regions in an image, separating them from other structures. We achieved the mAP50 score *0.58433*, compared to the best score of *0.589* in the Kaggle leaderboard `https://www.kaggle.com/competitions/hubmap-hacking-the-human-vasculature/leaderboard` 
 
 ## Example with a image after prediction with model.
-
+### Before prediction
 ![Before predict](before_pred.png)
 
-
+### After prediction
 ![After predict](after_pred.png)
 
 ## Demo
