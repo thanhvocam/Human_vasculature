@@ -52,7 +52,6 @@ Steps:
 - `best.pt`: The weights of the best-trained model.
 - `Dockerfile`: Configuration file for deploying the application using Docker.
 - `env.yaml`: Environment file to create a conda environment.
-- `example.py`: Example file containing functional code.
 - `infer.py`: File containing functional code to predict and segment blood vessels on new images.
 - `packages.txt`: List of required packages.
 - `requirements.txt`: List of required packages and their versions.
